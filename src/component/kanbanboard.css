@@ -1,0 +1,207 @@
+#heading {
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    padding: 30px;
+}
+
+#main {
+    padding: 20px;
+}
+
+#addboard {
+    padding: 20px;
+}
+
+#firstaddboardbtn {
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#inputboard {
+    border: 2px solid rgb(7, 142, 187);
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#secondaddboardbtn {
+    color: white;
+    background-color: rgb(7, 142, 187);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#addsecondbtn {
+    display: flex;
+    align-items: center;
+}
+
+#xicon {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#list {
+    width: 200px;
+    margin: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#addcard {
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#addcarddiv {
+    background-color: rgb(243, 243, 243);
+    height: 70px;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 15px;
+}
+
+#descdiv {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+#Description {
+    padding-left: 10px;
+}
+
+#descmain {
+    padding: 20px 20px 20px 20px;
+    border: 2px solid lightgray;
+    width: 500px;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background-color: rgb(243, 243, 243);
+}
+
+#Titletype {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#Title {
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#calendar {
+    cursor: pointer;
+    border: 2px solid gray;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#brown {
+    border: 2px solid brown;
+    border-radius: 200px;
+    background-color: brown;
+    width: 20px;
+    height: 20px;
+}
+
+#green {
+    border: 2px solid rgb(13, 236, 13);
+    border-radius: 200px;
+    background-color: rgb(13, 236, 13);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#blue {
+    border: 2px solid rgb(0, 200, 255);
+    border-radius: 200px;
+    background-color: rgb(0, 200, 255);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#darkgreen {
+    border: 2px solid darkgreen;
+    border-radius: 200px;
+    background-color: darkgreen;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#purple {
+    border: 2px solid purple;
+    border-radius: 200px;
+    background-color: purple;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#pink {
+    border: 2px solid rgb(225, 108, 128);
+    border-radius: 200px;
+    background-color: rgb(225, 108, 128);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#black {
+    border: 2px solid black;
+    border-radius: 200px;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#colors {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.skill {
+    background-color: rgb(116, 194, 92);
+    padding: 1%;
+    border-radius: 15px;
+}
+#taskscard{
+    display: flex;
+    flex-direction: column;
+    
+}
