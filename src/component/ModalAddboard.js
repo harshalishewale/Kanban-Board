@@ -3,6 +3,7 @@ import { List, X } from "react-feather";
 const Modaladdboard = (props) => {
     const handleboard = () => {
         props.setlist((list) => {
+        //    id: Date.now() + Math.random() * 2;
             const show = [...list, props.value]
             return show;
         })

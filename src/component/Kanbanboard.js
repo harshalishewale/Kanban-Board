@@ -3,10 +3,14 @@ import './kanbanboard.css';
 import Mainaddboard from "./Mainaddboard";
 import Modaladdboard from "./ModalAddboard";
 const Kanbanboard = (props) => {
-    const [Modal, Modalopen] = useState(false)
+    const [Modal, Modalopen] = useState(false);
+    //const [list, setlist] = useState([]);
     const [list, setlist] = useState([]);
-    // const [list, setlist] = useState([{id:Math.random()*10},]);
     const [value, setvalue] = useState("");
+    const key=[{
+        id: Date.now() + Math.random() * 2,
+        card:[]
+    }]
     return (
         <>
             <div id="main">

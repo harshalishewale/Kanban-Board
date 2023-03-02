@@ -3,15 +3,15 @@ import { Calendar, CheckSquare, List, Tag, Type, X } from "react-feather";
 import './kanbanboard.css';
 const Description = (props) => {
 
-    const handletitle = (event) => {
-        props.settitle(event.target.value);
+    const handletitle = () => {
+        props.settvalue(props.title)
     }
     const handledesc = (event) => {
-        props.setdescription(event.target.value);
+        props.setvdescription(props.description);
     }
 
-    const handlelabel = (event) => {
-        props.setlabel(event.target.value);
+    const handlelabel = () => {
+        props.setlvalue(props.label)
     }
 
     const handledate = (event) => {
@@ -22,7 +22,7 @@ const Description = (props) => {
         props.settasks(event.target.value);
     }
 
-
+console.log('props.tvalue',props.tvalue,'props.label',props.lvalue,'props.vdescription',props.vdescription)
     console.log('title', props.title, 'description', props.description, 'date', props.date, 'label', props.label, 'tasks', props.tasks);
     return (
         <div id="descmain">
@@ -41,10 +41,10 @@ const Description = (props) => {
                     <Type color="black" size="25px" />
                     <div id="Title">Title</div>
                 </div>
-                <input type="text" placeholder="Enter Title" id="inputboard" onChange={handletitle} />
+                <input type="text" placeholder="Enter Title" id="inputboard" onChange={ (event)=>props.settitle(event.target.value)} />
                 <br />
                 <div id="addsecondbtn">
-                    <button id="secondaddboardbtn">Add Title</button>
+                    <button id="secondaddboardbtn" onClick={handletitle}>Add Title</button>
                     <X id="xicon" color="black" size="30px" />
                 </div>
                 <br />
@@ -55,10 +55,10 @@ const Description = (props) => {
                         <List color="black" size="25px" />
                         <div id="Title">Description</div>
                     </div>
-                    <input type="text" placeholder="Description" id="inputboard" onChange={handledesc} />
+                    <input type="text" placeholder="Description" id="inputboard" onChange={(event)=>props.setdescription(event.target.value)} />
                     <br />
                     <div id="addsecondbtn">
-                        <button id="secondaddboardbtn" >Add Description</button>
+                        <button id="secondaddboardbtn" onClick={handledesc}>Add Description</button>
                         <X id="xicon" color="black" size="30px" />
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const Description = (props) => {
                 <br />
 
                 <div id="colors">
-                    <div id="brown"></div>
+                    <div id="brown" onClick={()=>{props.selectedcolor()}}></div>
                     <div id="green"></div>
                     <div id="blue"></div>
                     <div id="darkgreen"></div>
@@ -91,10 +91,10 @@ const Description = (props) => {
                     <div id="black"></div>
                 </div>
 
-                <input type="text" placeholder="Enter Label Text" id="inputboard" onChange={handlelabel} />
+                <input type="text" placeholder="Enter Label Text" id="inputboard" onChange={ (event)=>props.setlabel(event.target.value)&& props.selectedcolor()}  />
                 <br />
                 <div id="addsecondbtn">
-                    <button id="secondaddboardbtn" >Add</button>
+                    <button id="secondaddboardbtn" onClick={handlelabel}>Add</button>
                     <X id="xicon" color="black" size="30px" />
                 </div>
             </div>
